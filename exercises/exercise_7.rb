@@ -10,3 +10,9 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+@store_new = Store.create(name: gets.chomp.to_s, annual_revenue: 0, mens_apparel: false, womens_apparel: false)
+
+@store_new.errors.each do |a, msg|
+  puts "#{a} #{msg}"
+end
