@@ -12,7 +12,7 @@ class Store < ActiveRecord::Base
 
   def must_contain_apparel
     if !mens_apparel && !womens_apparel
-      errors.add(:apparel, "must contain at least one type of apparel")
+      errors.add(:base, "must contain at least one type of apparel")
     end
   end
 
